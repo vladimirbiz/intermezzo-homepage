@@ -28,10 +28,10 @@ body {
     display: none;
   }
   .h1-day-mob{
-    display: contents;
+    display: block;
   }
   .h1-night-mob{
-    display: contents;
+    display: block;
   }
 }
 
