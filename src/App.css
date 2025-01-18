@@ -36,18 +36,18 @@ body {
   width: 50vw; /* Half of the viewport width */
   height: 100vh;
   clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
-  background-color: rgb(224, 59, 54);
+  background-color: #c7baad;
   margin: 0;
   transition: background-color 0.5s ease-in-out; /* Transition on background-color */
 }
 
 /* Hover Effects */
 .right-side:hover {
-  background-color: #333; /* Darken the background when hovered */
+  background-color: #3c3434; /* Darken the background when hovered */
 }
 
 .left-side:hover {
-  background-color: #ff6b6b; /* Lighter red when hovered */
+  background-color: #b6a89b; /* Lighter red when hovered */
 }
 
 /* Centering h3 elements */
