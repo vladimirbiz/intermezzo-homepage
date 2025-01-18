@@ -15,33 +15,6 @@ body {
   background-position: center;
   margin: 0;
 }
-@media (max-width: 768px) {
-    body{
-    /* Example style */
-    background-image: url("intermezzodaymin.png"); /* White background for body */
-
-  }
-  .h1-day{
-    display: none;
-  }
-  .h1-night{
-    display: none;
-  }
-  .h1-day-mob{
-    display: block;
-    position: absolute;
-  top: 30%;
-  left: 35%;
-  transform: translate(-50%, -50%);
-  }
-  .h1-night-mob{
-    display: block;
-    position: absolute;
-  top: 70%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  }
-}
 
 .split-screen {
   display: flex; /* Use flexbox to align items side by side */
@@ -71,7 +44,6 @@ body {
 /* Hover Effects */
 .right-side:hover {
   background-color: #333; /* Darken the background when hovered */
-  
 }
 
 .left-side:hover {
@@ -112,13 +84,39 @@ a {
   position: relative;
   height: 100vh; /* Adjust height as needed */
 }
-.h1-day-mob{
-  display: none;
+
+/* Mobile-specific styles */
+.h1-day-mob,
+.h1-night-mob {
+  display: none; /* Hide by default */
 }
-.h1-night-mob{
-  position: absolute;
-  top: 70%;
-  left: 65%;
-  transform: translate(-50%, -50%);
-  display: none;
+
+@media (max-width: 768px) {
+  body {
+    background-image: url("intermezzodaymin.png"); /* Mobile-specific background */
+  }
+
+  /* Hide desktop versions of the text */
+  .h1-day,
+  .h1-night {
+    display: none;
+  }
+
+  /* Show mobile versions */
+  .h1-day-mob,
+  .h1-night-mob {
+    display: block; /* Show only on mobile */
+    position: absolute;
+    transform: translate(-50%, -50%);
+  }
+
+  .h1-day-mob {
+    top: 30%;
+    left: 35%;
+  }
+
+  .h1-night-mob {
+    top: 70%;
+    left: 65%;
+  }
 }
