@@ -10,10 +10,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image:url("intermezzoday.png"); /* White background for body */
+  background-image: url("intermezzoday.png"); /* White background for body */
   background-repeat: no-repeat;
   background-position: center;
-  margin: 0; /* Reset any default body margin */
+  margin: 0;
+}
+@media (max-width: 768px) {
+    body{
+    /* Example style */
+    background-image: url("intermezzodaymin.png"); /* White background for body */
+  }
 }
 
 .split-screen {
@@ -22,40 +28,58 @@ body {
   height: 100vh; /* Full viewport height */
   margin: 0;
 }
-.right-side{
-  width: 100vw;
+
+.right-side {
+  width: 50vw; /* Half of the viewport width */
   height: 100vh;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%); 
   background-color: black;
   margin: 0;
+  transition: background-color 0.5s ease-in-out; /* Transition on background-color */
 }
 
-
-.left-side{
-  width: 100vw;
+.left-side {
+  width: 50vw; /* Half of the viewport width */
   height: 100vh;
   clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
   background-color: rgb(224, 59, 54);
   margin: 0;
+  transition: background-color 0.5s ease-in-out; /* Transition on background-color */
 }
-h3{
+
+/* Hover Effects */
+.right-side:hover {
+  background-color: #333; /* Darken the background when hovered */
+  
+}
+
+.left-side:hover {
+  background-color: #ff6b6b; /* Lighter red when hovered */
+}
+
+/* Centering h3 elements */
+h3 {
   font-family: Arial, Helvetica, sans-serif;
   color: white;
   text-decoration: none;
 }
-.h1-night{
+
+.h1-night {
   position: absolute;
   top: 70%;
   left: 65%;
-  transform: translate(-50%, -50%);  /* Offsets the element to center it */
+  transform: translate(-50%, -50%);
 }
-.h1-day{
+
+.h1-day {
   position: absolute;
   top: 30%;
   left: 35%;
-  transform: translate(-50%, -50%);  /* Offsets the element to center it */
+  transform: translate(-50%, -50%);
 }
-a{
+
+/* Link styling */
+a {
   display: block;
   width: 100%;
   height: 100%;
@@ -65,5 +89,5 @@ a{
 
 .div-h3 {
   position: relative;
-  height: 100vh;              /* Adjust height as needed */
+  height: 100vh; /* Adjust height as needed */
 }
