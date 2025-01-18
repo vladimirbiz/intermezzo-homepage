@@ -21,6 +21,18 @@ body {
     background-image: url("intermezzodaymin.png"); /* White background for body */
 
   }
+  .h1-day{
+    display: none;
+  }
+  .h1-night{
+    display: none;
+  }
+  .h1-day-mob{
+    display: contents;
+  }
+  .h1-night-mob{
+    display: contents;
+  }
 }
 
 .split-screen {
@@ -91,4 +103,18 @@ a {
 .div-h3 {
   position: relative;
   height: 100vh; /* Adjust height as needed */
+}
+.h1-day-mob{
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.h1-night-mob{
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
