@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image:url("intermezzoday.png"); /* White background for body */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0; /* Reset any default body margin */
+}
+
+.split-screen {
+  display: flex; /* Use flexbox to align items side by side */
+  width: 100vw; /* Full viewport width */
+  height: 100vh; /* Full viewport height */
+  margin: 0;
+}
+.right-side{
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(100% 0, 0% 100%, 100% 100%); 
+  background-color: black;
+  margin: 0;
+}
+
+
+.left-side{
+  width: 100vw;
+  height: 100vh;
+  clip-path: polygon(0% 100%, 100% 0%, 0% 0%);
+  background-color: rgb(224, 59, 54);
+  margin: 0;
+}
+h3{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-decoration: none;
+}
+.h1-night{
+  position: absolute;
+  top: 70%;
+  left: 65%;
+  transform: translate(-50%, -50%);  /* Offsets the element to center it */
+}
+.h1-day{
+  position: absolute;
+  top: 30%;
+  left: 35%;
+  transform: translate(-50%, -50%);  /* Offsets the element to center it */
+}
+a{
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  text-decoration: none;
+}
+
+.div-h3 {
+  position: relative;
+  height: 100vh;              /* Adjust height as needed */
+}
