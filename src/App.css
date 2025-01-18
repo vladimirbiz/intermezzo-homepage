@@ -10,6 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #fffdf9;
   background-image: url("intermezzoday.png"); /* White background for body */
   background-repeat: no-repeat;
   background-position: center;
@@ -27,7 +28,7 @@ body {
   width: 50vw; /* Half of the viewport width */
   height: 100vh;
   clip-path: polygon(100% 0, 0% 100%, 100% 100%); 
-  background-color: black;
+  background-color:  #3c3434;
   margin: 0;
   transition: background-color 0.5s ease-in-out; /* Transition on background-color */
 }
@@ -43,7 +44,7 @@ body {
 
 /* Hover Effects */
 .right-side:hover {
-  background-color: #3c3434; /* Darken the background when hovered */
+  background-color: #1b1717; /* Darken the background when hovered */
 }
 
 .left-side:hover {
